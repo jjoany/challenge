@@ -1,0 +1,138 @@
+* {
+    background: #E5E5E5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.logoAlura {
+    margin-left: 10px;
+    padding-top: 10px;
+    width: 2%;
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 80px;
+}
+
+.text-area {
+    border: none;
+    color: #0a3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    font-family: 'Inter', sans-serif;
+    width: 400px;
+}
+
+::placeholder {
+    color: #0a3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.mensagem-container {
+    position: relative;
+    width: 400px;
+    margin-bottom: 100px; /* Espaço entre a mensagem e o botão de descriptografar */
+}
+
+.mensagem {
+    background: white;
+    background-image: url(/imagens/boy.png);
+    background-size: contain; /* Ajusta a imagem para se ajustar dentro do elemento */
+    background-repeat: no-repeat;
+    background-position: center; /* Centraliza a imagem dentro da textarea */
+    border: none;
+    border-radius: 24px;
+    color: #0a3871;
+    padding: 50px;
+    width: 100%; /* Ajusta a largura para preencher o contêiner */
+    height: 550px; /* Ajuste a altura conforme necessário */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o texto verticalmente */
+    align-items: center; /* Centraliza o texto horizontalmente */
+    font-size: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Inclui o padding e a borda na largura e altura total */
+}
+
+.mensagem:focus {
+    outline: none;
+}
+
+.btn-copiar {
+    border: 1px solid #0a3871;
+    border-radius: 24px; 
+    color: #0a3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    bottom: 11px; /* Ajusta a posição do botão dentro da mensagem */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.botoes {
+    display: flex;
+    margin-top: 18px;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+.btn-encriptar, .btn-desencriptar {
+    border-radius: 24px;
+    cursor: pointer;
+    height: 67px;
+    width: 300px; /* Ajuste conforme necessário */
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-encriptar {
+    background-color: #0a3871;
+    border: 1px solid #0a3871;
+    color: white;
+}
+
+.btn-desencriptar {
+    background: #d8dfe8;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+}
+
+
+.rodape {
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer {
+    
+    color: #333; /* Cor do texto */
+    padding: 8px;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Borda superior para definir o limite */
+    position: fixed; /* Faz com que o footer fique fixo no fundo da página */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0,0,0,0.1); /* Sombra sutil para destaque */
+}
+
+.footer p {
+    margin: 0; /* Remove margem padrão */
+    font-size: 14px; /* Tamanho da fonte */
+    font-family: 'Inter', sans-serif; /* Fonte utilizada */
+}
+
+.informacao h6 {
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+    color: #0a3871; /* Define a cor do texto, se desejar */
+    font-family: 'Inter', sans-serif; /* Mantém a mesma fonte que o restante do texto */
+}
