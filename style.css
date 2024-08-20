@@ -2,7 +2,7 @@
 
 * {
     background: #E5E5E5;
-    font-family: 'Inter' sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
@@ -20,11 +20,10 @@
     background-color: #E5E5E5;
 }
 
-
 .apresentacao {
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 82px;
 }
 
 .text-area {
@@ -53,6 +52,7 @@
     margin-bottom: 100px;
     border-radius: 60px;
 }
+
 .mensagem {
     background: white;
     background-image: url(/imagens/boy.png);
@@ -120,14 +120,12 @@
     color: #0a3871;
 }
 
-
 .rodape {
     font-size: 11px;
     font-family: 'Inter', sans-serif;
 }
 
 .footer {
-    
     color: #333; 
     padding: 8px;
     text-align: center;
@@ -152,3 +150,95 @@
     font-family: 'Inter', sans-serif; 
 }
 
+
+@media (max-width: 600px) {
+    .logoAlura {
+        margin-left: 20px;
+        width: 60px; /
+    }
+
+    .text-area {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: calc(100% - 40px); 
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+    }
+
+    .mensagem-container {
+        width: calc(100% - 40px);
+        margin-bottom: 20px;
+    }
+
+    .mensagem {
+        height: 300px; 
+        padding: 20px;
+        font-size: 16px; 
+    }
+
+    .btn-copiar {
+        width: calc(100% - 40px); 
+        height: 50px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 10px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%; 
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .informacao h6 {
+        margin-left: 20px;
+        font-size: 12px; 
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .logoAlura {
+        width: 80px; 
+    }
+
+    .text-area {
+        width: calc(100% - 40px); 
+    }
+
+    .apresentacao {
+        gap: 40px;
+    }
+
+    .mensagem-container {
+        width: 90%; 
+    }
+
+    .mensagem {
+        height: 400px; 
+        padding: 30px;
+        font-size: 18px; 
+    }
+
+    .btn-copiar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .botoes {
+        gap: 15px;
+    }
+
+    .btn-encriptar, .btn-desencriptar {
+        width: 100%; 
+    }
+}

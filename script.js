@@ -1,12 +1,12 @@
 const textArea = document.querySelector(".text-area");
 const mensagem = document.querySelector(".mensagem");
 
-// função para remover acentos e transformar em minúsculas
+
 function normalizeText(text) {
-    // funcao para converter o texto para letras minúsculas
+   
     text = text.toLowerCase();
     
-    // funçao para remover acentos e caracteres especiais
+    
     return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
 
@@ -49,11 +49,10 @@ function Desencriptar(stringDesencriptada) {
 function copyToClipboard() {
     const outputText = mensagem.value;
     navigator.clipboard.writeText(outputText).then(() => {
-        // exibe um alert para informar que o texto foi copiado
-        alert('texto copiado com sucesso!');
-        // recarrega a página para voltar ao resultado inicial
+        
         window.location.reload();
     }).catch(err => {
         console.error('erro ao copiar o texto: ', err);
     });
 }
+
